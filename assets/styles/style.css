@@ -1,0 +1,158 @@
+:root {
+  --primary-dark-violet: hsl(256, 26%, 20%);
+  --primary-greyish-blue: hsl(216, 30%, 68%);
+
+  --neutral-very-dark-violet: hsl(270, 9%, 17%);
+  --neutral-grayish-violet: hsl(273, 4%, 51%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+
+  --font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Karla-regular';
+  src: url(../fonts/Karla/static/Karla-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla-bold';
+  src: url(../fonts/Karla/static/Karla-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM-Serif-regular';
+  src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla-regular', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size);
+  color: var(--neutral-very-dark-violet);
+  font-size: var(--font-size);
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem 0;
+  font-family: 'DM-Serif-regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.brand__logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__items a {
+  text-decoration: none;
+  color: var(--neutral-grayish-violet);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav__items a:hover {
+  color: var(--primary-dark-violet);
+}
+
+.nav__btn {
+  background-color: inherit;
+  color: var(--primary-dark-violet);
+  text-decoration: none;
+  text-transform: uppercase;
+  /* font-size: 1rem; */
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-dark-violet);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav__btn:hover {
+  background-color: var(--neutral-very-dark-violet);
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  background-color: var(--primary-dark-violet);
+  max-height: 60vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.hero__content {
+  color: #fff;
+}
+
+.hero__content h1 {
+  font-family: 'Karla-bold', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.features {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.features h2 {
+  font-family: 'DM-Serif-Display';
+}
+.features__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature__img{
+  width: 100px;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
